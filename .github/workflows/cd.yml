@@ -31,3 +31,6 @@ jobs:
 
       - name: Build and push to GAR
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/cobalt-alchemy-490523-i2/notely-ar-repo/notely:latest .
+
+      - name: Deploy to Cloud Run
+        run: gcloud run deploy notely --image us-central1-docker.pkg.dev/cobalt-alchemy-490523-i2/notely-ar-repo/notely:latest --region us-central1 --project cobalt-alchemy-490523-i2 --max-instances=4
