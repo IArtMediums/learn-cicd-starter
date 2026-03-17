@@ -30,4 +30,4 @@ jobs:
         uses: google-github-actions/setup-gcloud@v3
 
       - name: Build and push to GAR
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/cobalt-alchemy-490523-i2/notely-ar-repo/notely:— .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/cobalt-alchemy-490523-i2/notely-ar-repo/notely:latest .
